@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//Tarea1: Añadir funcion para sumar, 
+//Tarea1 (David Basallote): Añadir funcion para sumar, 
 //y modificar el la opcion 1 del switch para que
 //invoque a la funcion sumar con los parámetros correctos.
 
@@ -23,17 +23,24 @@ using namespace std;
 //Tarea6: añadir la función 'prepara_operación', que lee los operandos
 //n1 y n2, y muestra el menú en pantalla.
 
+int sumar(int numero1, int numero2)
+{
+	int resultado_suma;
+	resultado_suma=numero1+numero2;
+	return resultado_suma;
+}
 
 int main(int argc, char *argv[]) {
 	
-	int n1, n2, opcion;
+	int n1, n2, opcion, suma;
 	char otra_operacion;
 	cout << "Bienvenido al programa calculador.\n";	
 
 	cout << "Introduce dos números: \n";
 	cin >> n1;
 	cin >> n2;		
-
+	suma=sumar(n1, n2);
+	
 	//Muestra menú de opciones
 	cout	
 		<< "Éstas son las opciones: \n"
@@ -52,7 +59,7 @@ int main(int argc, char *argv[]) {
 	cout << "Ha elegido la opción " << opcion << "\n";
 	switch (opcion) {
 	case 1:
-		cout << n1 << "+" << n2 << "=" << n1+n2 <<"\n";
+		cout << n1 << "+" << n2 << "=" << suma <<"\n";
 		break;
 	case 2:
 		cout << n1 << "-" << n2 << "=" << n1-n2 <<"\n";
