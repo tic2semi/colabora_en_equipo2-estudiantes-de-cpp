@@ -9,7 +9,7 @@ using namespace std;
 //y modificar el la opcion 2 del switch para que
 //invoque a la funcion restar con los par�metros correctos.
 
-//Tarea3: A�adir funci�n para multiplicar
+//Tarea3:(Juan Francisco Cortejosa) A�adir funci�n para multiplicar
 //y modificar el la opcion 3 del switch para que
 //invoque a la funcion multipliar con los par�metros correctos.
 
