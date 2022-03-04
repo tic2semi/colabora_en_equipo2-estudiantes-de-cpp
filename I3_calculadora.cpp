@@ -29,7 +29,11 @@ int sumar(int numero1, int numero2)
 	resultado_suma=numero1+numero2;
 	return resultado_suma;
 }
-
+float restar(float numero1,float numero2){
+	float resultado;
+	resultado=(numero1-numero2);
+	return resultado;
+}
 int main(int argc, char *argv[]) {
 	
 	int n1, n2, opcion, suma;
